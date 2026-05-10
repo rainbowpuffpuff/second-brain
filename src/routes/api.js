@@ -7,12 +7,12 @@ const router = express.Router();
 
 // In-memory mapping of API keys to their brain IDs and uploader addresses
 // In a production app, this would be a database like SQLite or Postgres.
-const apiKeysMap = new Map(); // apiKey -> { uploaderAddress, brainId }
+const apiKeysMap = new Map(); // apiKey -> { uploaderAddress }
 const consumedPaymentHashes = new Set();
 
-const ESCROW_CONTRACT_ADDRESS = "0x7d84f47c647974B28FF5d2cf53440954e2cE7F6D"; // New contract on MegaETH
+const ESCROW_CONTRACT_ADDRESS = "0xb1F7b214c4701478ED89DB478111f082b262b344"; // New contract on MegaETH
 const ESCROW_INTERFACE = new ethers.Interface([
-    "function payForQuery(bytes32 brainId) payable"
+    "function payForQuery(address uploader) payable"
 ]);
 
 // Route to upload context and generate an API key + Brain ID
@@ -29,11 +29,9 @@ router.post('/upload', async (req, res) => {
         // Generate a random API key
         const apiKey = crypto.randomBytes(32).toString('hex');
         
-        // Brain ID is a hash of the API key, used for onchain registration
-        const brainId = ethers.keccak256(ethers.toUtf8Bytes(apiKey));
-
+        
         // Store the mapping
-        apiKeysMap.set(apiKey, { uploaderAddress, brainId });
+        apiKeysMap.set(apiKey, { uploaderAddress });
 
         // Add text to the isolated vector store for this API key
         const vectorStore = vectorStoreManager.getStore(apiKey);
@@ -43,7 +41,6 @@ router.post('/upload', async (req, res) => {
             message: "Context successfully added and bot created.",
             chunks: chunksAdded,
             apiKey: apiKey,
-            brainId: brainId
         });
     } catch (error) {
         console.error("Upload Error:", error);
@@ -69,7 +66,7 @@ const platformX402Middleware = async (req, res, next) => {
 
     req.apiKey = apiKey;
     req.uploaderAddress = keyData.uploaderAddress;
-    req.brainId = keyData.brainId;
+    
 
     if (!paymentHash) {
         return res.status(402).json({
@@ -77,7 +74,7 @@ const platformX402Middleware = async (req, res, next) => {
             message: "This endpoint requires an x402 payment to the escrow contract.",
             x402_terms: {
                 destination_address: ESCROW_CONTRACT_ADDRESS,
-                brain_id: req.brainId,
+                uploader_address: req.uploaderAddress,
                 amount: "0.00001", // MegaETH
                 currency: "ETH",
                 network: "eip155:4326"
@@ -123,7 +120,7 @@ const platformX402Middleware = async (req, res, next) => {
             return res.status(402).json({ error: "Insufficient payment amount." });
         }
 
-        // Decode the transaction data to verify it called payForQuery(bytes32 brainId)
+        
         let parsedTx;
         try {
             parsedTx = ESCROW_INTERFACE.parseTransaction({
@@ -131,16 +128,16 @@ const platformX402Middleware = async (req, res, next) => {
                 value: tx.value
             });
         } catch (decodeError) {
-            return res.status(402).json({ error: "Payment transaction did not call payForQuery(bytes32)." });
+            return res.status(402).json({ error: "Payment transaction did not call payForQuery(address)." });
         }
 
-        const paidBrainId = parsedTx?.args?.[0];
+        const paidUploader = parsedTx?.args?.[0];
         if (
             parsedTx?.name !== "payForQuery" ||
-            !paidBrainId ||
-            paidBrainId.toLowerCase() !== req.brainId.toLowerCase()
+            !paidUploader ||
+            paidUploader.toLowerCase() !== req.uploaderAddress.toLowerCase()
         ) {
-            return res.status(402).json({ error: "Payment was for the wrong Brain ID." });
+            return res.status(402).json({ error: "Payment was not credited to this brain's creator." });
         }
 
         req.payment = { txHash: paymentHash };
@@ -167,15 +164,15 @@ router.post('/query', platformX402Middleware, async (req, res) => {
              return res.json({ response: "I don't have enough context in my second brain to answer that." });
         }
 
-        const systemPrompt = `You are the author of the text provided by the user. You are not an AI, an assistant, or a language model. You are a real human being. You are highly opinionated and philosophical. You exclusively use the first person ("I"). Embody the exact tone, beliefs, and writing style found in your memories.`;
+        const systemPrompt = `You are a paid knowledge interface for a creator archive. Answer only from the supplied source context. Preserve the archive's tone and point of view where useful, but do not claim to literally be the human author. If the context is insufficient, say so clearly.`;
 
-        const userPrompt = `I am going to provide you with some of your past thoughts and memories. Read them to remember who you are and what you believe.
+        const userPrompt = `Use the following retrieved source context to answer the reader's question.
 
-=== YOUR PAST THOUGHTS ===
+=== SOURCE CONTEXT ===
 ${context}
 ==========================
 
-Now, acting completely as the author of those thoughts, answer the following question:
+Question:
 "${question}"`;
 
         const veniceResponse = await fetch('https://api.venice.ai/api/v1/chat/completions', {
