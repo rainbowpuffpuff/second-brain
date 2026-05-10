@@ -301,6 +301,7 @@ function UploaderDashboard() {
                     </div>
                     <pre className="overflow-x-auto rounded-md bg-slate-950 p-3 text-sm text-slate-100">{embedUrl}</pre>
                   </div>
+                  <a href={embedUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex h-10 w-full items-center justify-center rounded-lg border border-violet-700 bg-violet-700 px-4 text-sm font-semibold text-white transition hover:bg-violet-800">View Live Agent →</a>
                   <div>
                     <div className="mb-2 flex items-center justify-between">
                       <p className="text-sm font-semibold text-slate-700">Iframe snippet</p>
@@ -366,6 +367,30 @@ function UploaderDashboard() {
             </div>
           </aside>
         </section>
+        <section className="mt-8 rounded-2xl bg-gradient-to-br from-slate-900 to-indigo-950 p-1">
+          <div className="rounded-xl bg-slate-900 p-6 md:p-8">
+            <div className="mb-6 flex items-center gap-3">
+              <span className="inline-flex items-center rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
+                Work in Progress
+              </span>
+              <h2 className="text-xl font-semibold text-white">Network Roadmap: Protocol Economics</h2>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="rounded-lg bg-white/5 p-5 ring-1 ring-white/10">
+                <h3 className="mb-2 text-base font-medium text-white">Token Value Accrual</h3>
+                <p className="text-sm leading-relaxed text-slate-300">
+                  Second Brain is designed to capture platform value directly. A small protocol fee (e.g., 5%) is taken from every paid query. These fees are aggregated into a treasury and used to programmatically buy and burn the native protocol token, directly aligning token value with the network's overall agentic GDP.
+                </p>
+              </div>
+              <div className="rounded-lg bg-white/5 p-5 ring-1 ring-white/10">
+                <h3 className="mb-2 text-base font-medium text-white">Decision Market Treasury</h3>
+                <p className="text-sm leading-relaxed text-slate-300">
+                  Instead of slow, traditional DAO voting, the protocol expansion is governed by Futarchy (Decision Markets). Token holders trade on predictive outcomes. The treasury automatically executes and funds the strategies the market predicts will be most profitable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
@@ -376,7 +401,7 @@ function ChatMessage({ role, children }) {
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
       <div
-        className={`max-w-[88%] rounded-lg px-3 py-2 text-sm leading-6 ${
+        className={`max-w-[88%] break-words whitespace-pre-wrap rounded-lg px-3 py-2 text-sm leading-6 ${
           isUser ? 'bg-slate-950 text-white' : 'border border-slate-200 bg-white text-slate-700'
         }`}
       >
