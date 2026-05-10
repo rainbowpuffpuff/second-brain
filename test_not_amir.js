@@ -1,0 +1,41 @@
+import fetch from 'node-fetch';
+import fs from 'fs';
+
+const API_URL = 'http://127.0.0.1:3000/api';
+const DEMO_CREATOR = '0x000000000000000000000000000000000000dEaD';
+
+async function testSmallBrainHandshake() {
+    console.log("Uploading carol_context.txt...");
+    const text = fs.readFileSync('./carol_context.txt', 'utf8');
+
+    const uploadResponse = await fetch(`${API_URL}/upload`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text, uploaderAddress: DEMO_CREATOR })
+    });
+
+    const uploadData = await uploadResponse.json();
+    console.log("Upload response:", uploadData);
+
+    if (!uploadResponse.ok) {
+        process.exitCode = 1;
+        return;
+    }
+
+    const response = await fetch(`${API_URL}/query`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${uploadData.apiKey}`
+        },
+        body: JSON.stringify({ question: "Who are you?" })
+    });
+
+    console.log(`Status: ${response.status}`);
+    console.log("Response:", await response.json());
+}
+
+testSmallBrainHandshake().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});

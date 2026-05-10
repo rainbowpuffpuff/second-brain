@@ -1,0 +1,13 @@
+curl https://api.venice.ai/api/v1/chat/completions \
+  --header "Authorization: Bearer $VENICE_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '
+{
+  "model": "llama-3.3-70b",
+  "messages": [
+    {"role": "user", "content": "What makes this archive valuable?"}
+  ],
+  "venice_parameters": {
+    "include_venice_system_prompt": false
+  }
+}'

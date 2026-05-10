@@ -1,0 +1,36 @@
+Second Brain product spec
+
+One-liner
+Second Brain lets creators monetize their knowledge as a pay-per-answer AI embed.
+
+Audience
+- Creators, researchers, educators, protocol teams, and communities with valuable written archives.
+- Readers who want direct answers from a specific body of work instead of searching through long-form content.
+
+Core flow
+1. A creator connects a wallet.
+2. The creator uploads text context: essays, notes, transcripts, docs, research, or support material.
+3. The backend chunks and embeds the text into an isolated in-memory vector store.
+4. The creator receives a public iframe URL backed by an API key.
+5. A reader asks a question in the embedded chat.
+6. The API returns HTTP 402 payment terms.
+7. The reader pays the escrow contract on MegaETH.
+8. The frontend retries the query with the payment transaction hash.
+9. The backend verifies the transaction, retrieves relevant context, and asks Venice AI for an answer.
+10. The creator claims accumulated escrow earnings.
+
+Value proposition
+- Creators get a monetizable interface for their archives without building their own AI product.
+- Readers pay only when they ask a question.
+- x402-style payment turns the API response into a machine-readable paid resource.
+- Venice provides the intelligence layer.
+- MegaETH escrow makes creator earnings visible and claimable.
+
+Current MVP constraints
+- Uploaded brains, API keys, and used payment hashes are stored in server memory.
+- The vector store is local and simple, optimized for the hackathon demo rather than production scale.
+- The frontend expects a browser wallet that can switch to MegaETH.
+- The app is designed for text uploads only.
+
+Submission framing
+Creator-owned paid knowledge infrastructure: upload an archive, publish a wallet-native chatbot, and earn every time someone asks it a question.

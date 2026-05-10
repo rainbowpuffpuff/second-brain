@@ -1,0 +1,237 @@
+Name: Amir Taaki
+
+Yeah, it's very interesting that DevCon is in a giant shopping mall.
+It kind of represents the peak end of crypto burner culture.
+Yeah, I was in Syria for almost three years and I was part of the administration approving
+technology projects for a region of five million people.
+I was like, oh, this is a great opportunity to be able to deploy cryptocurrency on a national scale.
+I went to contact different Bitcoin organizations and most of them were not interested.
+There's a lot of really silly projects that people are focused on
+and it was very hard to get people to pay attention to any kind of big market opportunity
+for deploying cryptocurrency on a national scale.
+So that's when I kind of realized that there is a money market and a lot of this rhetoric
+and the way it's used is as a tool to advance interests.
+There's a machine where the money is going through and this rhetoric is used to bring the fish along for the ride
+and skim off the top from them.
+The second point is when I started to think about how would I deploy cryptocurrency on a national scale,
+the software that I need, the hardware that I need, the infrastructure that I need,
+I realized that none of that exists currently.
+Nobody is working on this stuff.
+It's all very provincial, small personal devices and small consumer projects.
+Nobody is really thinking on a large scale on the opportunity that is available to us.
+But there is another group or there was another group that was interested about big economical projects
+and that group was ISIS and what they actually did is they minted their own gold and silver backed currency,
+which was an area that was basically half of Iraq and Syria.
+They minted their own gold and silver backed currency because they wanted to challenge the hegemony of the US financial power.
+And I have one of the coins here.
+That's a genuine ISIS silver dirham, which was the main currency of the state that they were trying to produce.
+So those were guys that were trying to think on a bigger scale about what they were trying to do.
+Right now, inside of cryptocurrency, there is a huge wealth of human resource around us that we're not making use of,
+especially young people who realize that blockchain and cryptocurrency is going to be big in the future.
+And they're looking to enter into the space.
+And these are people that they have no family.
+They're really dedicated. They're really creative. They're ambitious.
+But the problem is, is right now, they just kind of end up getting used as tools, working for companies, doing slave work.
+And the problem is, is we have a big inversion inside of cryptocurrency space where there's a startup mentality,
+which is like, let's get loads of capital. Let's hire the best cryptographers and the best programmers.
+And instead, we're not thinking about nurturing the talent that's inside of our community.
+There is a lot of young people and especially young people that feel disaffected by what's going on or sit or sense how we're not actually fulfilling the vision of cryptocurrency that we wanted to make.
+But the problem is, is that also we have a massive misallocation of capital.
+And 90% of these projects exist now are going to fail simply because they don't know even themselves what they're trying to create.
+You know, they don't have a clear vision of the society or a lot of it is just rhetoric.
+And a lot of it is just companies that have little feudal kingdoms and are trying to one up each other, you know, like trying to further their brand.
+And, you know, it's like I'm trying, I'm building an academy in Spain to train developers, to train hackers.
+And it's really incredibly difficult to get donations from people to support something that is strategically important for cryptocurrency as a whole.
+I met with Vitalik and I explained to him about all these projects, what exactly we need to build.
+And that I have a company that's willing to put in 100,000 and I need to raise 100,000 from four other people and I need 25k from him.
+And he was like, hmm, I'll think about it.
+And that was a guy that before Ethereum, he was living with us.
+We were supporting his work as well as other developers.
+So and the problem with Vitalik is he have a low social intelligence.
+So he's not able to discern like who are his friends and who's not his friends.
+And he has this tight cadre of people around him.
+And there's a lot of rhetoric we have about decentralization.
+But there are all of these hidden hierarchies that basically form like closed cliques or like cartels.
+Gav Wood as well, you know, he's like, oh, like, you know, like he's like, if we want to build something big, we have to work together towards a long vision.
+And Gav Wood is like, yeah, it's cool.
+We're going to work. We'll work together.
+Blah, blah, blah.
+He's like, yeah, you can do one of our grants for 100k.
+What happens? The grant gets stuck in the bureaucratic machinery, you know.
+So there's a very interesting story about Nikola Tesla, who he was working for Edison.
+Edison said, if you solve the problem with my power plants, you'll get a bonus of 50,000.
+Nikola Tesla, he solved the problem.
+And what happened was Edison fired him because he felt threatened by what Nikola Tesla represented.
+And he ended up being homeless on the streets, digging trenches for people to earn enough money.
+So there is this kind of we have to understand that where does the authority and where does this system of hierarchy come from is not necessarily from the system that we have.
+It's from the mindset that exists inside of the community.
+Right now, all of these blockchain projects are going to fail because they don't have a narrative.
+Their discourse is weak.
+That's the most important thing is the narrative because it's how you build a movement,
+how you attract people together to go towards a long term strategic objective.
+Right now, there is what I would call a complexity oriented approach.
+There is a noted tendency of engineers that what we do as engineers
+we look at mechanisms and we reduce the world down to mechanisms that we can exploit.
+And we make a joke in the video game industry, which we say programmer art,
+which is like when programmers try to make video game art, it's like cumbersome.
+It doesn't look creative at all.
+Or, for example, any kind of software where the user interface is designed by a programmer.
+They're very cumbersome.
+They have like too many features.
+So there is a tendency of developers when they do software projects
+to create these huge unwieldy monsters in which it's just a collection of features
+rather than actually solving real problems or use cases in the market that exist.
+So we have to first of all understand what is it that we're going towards.
+There is a lot of rhetoric about the state, like what is the state?
+The state is a system that you make use of ideology.
+You know, you have the priests of liberalism.
+You have the military or the coercive force, the police,
+and the administration and the bureaucracy and all the technical knowledge.
+And the state is a system that use people as human beings, use people as tools,
+does not help people achieve their individual freedom.
+So instead of thinking about complex electronic systems that manage human beings as objects,
+we should be thinking about what the tools that we can build to enable people
+who share an ideology that we have.
+Like how can we empower this section of the market or these groups of people
+that we want to move forwards with.
+And to create that form of society, that free society,
+we have to create an ethical, philosophical society.
+It comes through the development of the intellectual ideas.
+And right now in cryptocurrency space, it's become very difficult to solve problems
+because there is not any kind of proper analysis being done of the society.
+We're repeating all the same mistakes we made throughout the history of technology.
+Not everything's ahistorical.
+Nobody's looking at the history of technology or the history of humanity.
+So oriented against that, we have to take a simplicity oriented approach.
+Now, in the 70s, Unix was developed.
+Unix is the origin is where all the modern concepts behind the computer were invented.
+The network socket, the file, time sharing operating system, that was made by Unix in the 70s.
+What happened was at the time, there were several big operating system projects like ITS,
+Multics, MS2, a whole bunch of them.
+And what they were doing is they were really big, well funded projects that had huge amounts of capital.
+And they were going, they were doing things very academically, like bit by bit.
+And they were focused on perfection and completeness.
+And there was a group of developers who left from all these major operating system projects
+who were disaffected by how they were going.
+And they founded Unix.
+And they took all the best ideas at the time and they developed this operating system.
+Basically, the way it was built was out of components.
+And these components could be put together in ways that the programmers did not originally envision
+to create new functionality.
+And that enabled Unix to be adaptable and to be able to be changed for many different use cases.
+And basically, Unix delivered the operating system.
+All the other projects ended up to fail.
+And they put forward a new paradigm of technology, which, you know, in over 50 years,
+our computing paradigm has not changed.
+The devices that we use, they've got smaller, they've got faster, but they haven't changed.
+Even something as simple as sharing a file is still really cumbersome, you know.
+And I see inside of cryptocurrency community, there is a lot of focus on mechanisms and techniques.
+But there is very little joining of the dots.
+There's very little talk about structure and infrastructure.
+Like, how can we go to areas where we have agreements with the local administration
+and there is a potentially huge market and we can deploy cryptocurrency at a mass scale, at a large scale?
+These are big opportunities in the market.
+So, you know, one thing I've been interested in recently is about anonymous mixers,
+which, you know, a lot of now the anonymity techniques that exist now,
+they shift the burden from the verifier to the prover,
+because when you have a blockchain, everybody has to verify the transactions.
+So they try to shift the burden to the prover.
+But, you know, with a mixer, we can actually, we can actually, there's, there's,
+you can take some of these algorithms, for example, RingCT algorithm,
+which Monero is not anonymous, MimboMimbo is not anonymous.
+Zcash is anonymous, but it's a massive Ruby Goldberg machine with many moving parts,
+which has a really big attack surface.
+But there is a lot of really interesting research into anonymity techniques,
+even RingCT itself, which is, Monero is not anonymous because it has a key size of 10.
+If you take 100,000 keys, I implemented the algorithm took 74 seconds.
+I basically was able to do a lot of optimization, such as doubling the proof size,
+which allowed the proof and the verification to be calculated massively in parallel,
+which the verification, you have these servers, you have these, sorry,
+CPUs called AMD Ryzen Threadripper with 32 cores and 64 threads.
+If you have a computer with four of those, you have a massive amount of parallel power.
+But even now, there's other techniques, like there's a very interesting project called Zcoin,
+and the guy, they're a very small team, but they're very motivated,
+and they've developed a technique called Lelantis,
+which is based off of GenScraff one out of N commitment to zero.
+So the RingCT scheme, with these optimizations,
+I was able to reduce from 74 seconds to six and a half seconds.
+And with the Lelantis scheme, it should be possible to get,
+because it's not linear speed, it's logarithmic speed,
+it should be able to get milliseconds performance.
+But yeah, so starting with a product or several products,
+we can add features to these products, but through the process of examining the market,
+examining the traders, the work that they do, the processes that we have,
+we can better adapt our products and our technology,
+and we can abstract out that technology into a platform.
+It's like I go to some of these talks, and I hear people talking about decentralized derivatives,
+and I'm thinking to myself, and they're talking about mortgages and financing for consumers,
+I'm really thinking to myself, why are we not thinking about how to create dark finance
+that we can use to leverage against government bonds, to dump on the market, to crash?
+We can crash national economies.
+But people's not really thinking on a big level.
+I see it's like the old rich, they raised their kids from a really young age
+with all these elaborate rituals and ceremonies to maintain their power and their financial power.
+And this crypto-nouveau rich, you see them buying yachts and lambos.
+Nobody's really thinking about what we can really do on a big scale.
+We can become a global superpower.
+And we need to develop a new paradigm of computing, one which is seamless across devices,
+one which allows human beings to organize economically on a large scale.
+Civilization, the purpose behind civilization, is that it allows human beings,
+different groups of human beings, to come together to build a society.
+Right now, the technology that we use is built for consumers, for individuals.
+You see this in crypto, in which a lot of people is developing products for people like themselves
+in Silicon Valley, when instead we should be thinking about, you know,
+there were all these countries like Venezuela, Iran, Cyprus, you know, you've got all this crypto news.
+A lot of that is fake news.
+A lot of it is not, people use statistics, but it doesn't translate to anything real.
+You know, so those, in my opinion, were lost opportunities.
+But, you know, the world is collapsing.
+We are entering into a new stage.
+Globalization is being challenged by new upstart nationalist movements.
+We also have the rise of China and also the militaristic geopolitical competition Russia has with America.
+And we need to be prepared to take advantage of these opportunities when they present themselves.
+That's why we need to develop our intellectual capacity in the cryptocurrency community.
+There is a potential here that we can make use of, but it's not just going to happen by itself.
+We have to make that thing happen.
+You know, the technology that we use today is built for individuals.
+You know, we need to think about social infrastructure,
+how to build technologies that enable human beings to collaborate on large pieces of infrastructure.
+We need to take control of the telecoms networks as well.
+Right now, the entire cryptocurrency community is nothing.
+There is nothing here and it's very weak and it's ripe for a takeover.
+You know, most of these groups are going to collapse.
+You already see Ethereum community kind of getting taken over by these groups like Cosensys,
+even though they're a bit thick, like they at least are like moving towards some kind of vision.
+And so that's why we need to build a system.
+You know, it's a problem that everything now is built off of personality and celebrity culture.
+You know, it's going to like destroy our effectiveness as a movement to be able to make change on a big level.
+So we need to build a new system.
+And like I was going three years ago to try and convince people that there needs to be a change on a big scale.
+The cryptocurrency is not going to realize its big potential.
+And I realized that all of these projects right now, they're corrupted.
+The people that are in the power, you know, they have their worldview, they have the things that they're doing.
+That change is not going to happen from those people.
+But there is a lot of people who feel that something should change and want things to change.
+And that's why we have to make a new system and we have to recruit the people into that new system as well.
+So, yeah, so to end this, we're developing an academy in Barcelona.
+Eventually, after this first academy, we're going to develop a system of academies,
+which is to train not just hackers, but to train leaders or to train.
+We have to create a new image of a hacker, like a new type of hacker, you know, a hacker.
+The problem is that a lot of this right now is really sheltered and cut off from the actual problems that we're trying to solve.
+And it can't just be education about technology.
+It has to be also philosophical, philosophy education.
+In ancient Greece, they had a system of academies, which was the basis of the system in ancient Greece.
+It was where Socrates would recruit his followers like Plato and Aristotle.
+And when Christianity came to ancient Greece, they shut down the academies and all the teachers went east to Baghdad,
+where they founded the House of Wisdom.
+And that was what started the Islamic Golden Age.
+We need to start a renaissance inside of cryptocurrency.
+So, you know, right now I'm like raising like a hundred K because I have it matched by another investor.
+But I'm not looking just for any people.
+It has to be like the right type of people, people who is like on a level that we were moving in this in this direction, not just gamblers.
+So, yeah, there's a there's an opportunity in front of us.
+If we if we prepare and we have the vision and we're able to develop our thoughts and our human capacity,
+when opportunity presents itself and trust me, there's going to be these opportunities,
+we'd be ready to take advantage of that.
+All right. Thank you.
+You
